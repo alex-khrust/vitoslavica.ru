@@ -1,0 +1,141 @@
+.gallery-list
+
+  .box.photo-album-page
+    display: block
+
+  .box
+    text-align: center
+
+  .box .box-heading
+    font-size: 18px
+    line-height: 9px
+    margin: 30px 0
+    padding: 10px 30px
+    text-transform: uppercase
+    text-align: left
+    font-weight: 600
+    font-family: 'CyrillicOld'
+    border-bottom: 1px solid #3e454c
+    background-color: rgba(176,176,176,0)
+
+  .po_gallery
+    line-height: 20px
+    width: 100%
+    font-size: 16px
+    display: flex
+    justify-content: space-evenly
+    flex-flow: wrap
+    padding: 20px
+
+
+  .about-company .house-item, .photo-album-page .album-item
+    display: inline-block
+    margin: 5px 40px 50px
+    width: 156px
+    position: relative
+    @media (max-width: 1024px)
+      margin: 5px 27px 50px
+    a
+      width: 100%
+      height: 100%
+      display: inline-block
+
+  .photo-album-page .album-item
+    width: 100%
+    max-width: 200px
+    //margin-left: 40px
+    //margin-right: 40px
+
+  .about-company .blog-image-wrap, .photo-album-page .album-image-wrap
+    float: none
+    padding: 3px
+    border: 1px solid #4c2b00
+    border-radius: 50%
+    display: inline-block
+
+  .about-company .blog-image, .photo-album-page .album-image
+    width: 195px
+    height: 195px
+    background: 0
+    overflow: hidden
+    border-radius: 50%
+    position: relative
+    border: 2px solid #4c2b00
+
+  .about-company .house-item img, .photo-album-page .album-item img
+    width: 100%
+    height: auto
+    opacity: .6
+    transition: .3s
+    overflow: hidden
+    border-radius: 50%
+    position: relative
+
+  .about-company .house-item:hover img, .photo-album-page .album-item:hover img
+    opacity: 1
+    overflow: hidden
+    border-radius: 50%
+    position: relative
+
+
+  .photo-album-page .album-item>a>span
+    width: 100%
+    height: auto
+    display: inline-block
+    padding-top: 10px
+    text-align: center
+    color: $darkbrown
+
+
+
+.gallery-page
+  .gallery-list
+    .po_gallery
+      justify-content: center
+    .about-company .house-item, .photo-album-page .album-item
+      margin: 5px 35px 50px
+      @media (max-width: 1024px)
+        margin: 5px 27px 50px
+
+
+.gallery-project
+  &__text
+    p
+      margin-bottom: 20px
+
+
+.company-page
+  .po_gallery
+    padding-bottom: 0
+  .photo-album-page .album-item
+    max-width: 190px
+    margin-bottom: 30px
+  .mini
+    .photo-album-page .album-image
+      max-width: 149px
+      max-height: 149px
+
+
+
+.grid
+  width: 100%
+  height: auto
+  margin: 40px auto 0
+  display: flex
+  flex-flow: wrap
+  img
+    width: 100%
+    height: 100%
+    max-height: 300px
+    object-fit: cover
+.grid-sizer,
+.grid-item
+  width: 33.333%
+  padding: 10px
+  @media (max-width: 567px)
+    width: 50%
+.grid-item--width2
+  width: 66.666%
+  img
+    width: 100%
+

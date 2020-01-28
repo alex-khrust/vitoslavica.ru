@@ -1,0 +1,120 @@
+footer
+  width: 100%
+  height: auto
+  background: $darkblue
+  font-family: 'ProximaNovaCond-Regular'
+  padding: 35px 0
+  .footer__nav
+    width: 100%
+    height: auto
+    display: flex
+    position: relative
+    padding-bottom: 30px
+    margin-bottom: 20px
+    &:after
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 1px
+      background: #fff
+    &>li
+      width: auto
+      margin: 5px auto
+      .title-footer
+        width: 100%
+        height: auto
+        display: flex
+        align-items: center
+        img
+          width: 16px
+          height: 16px
+        h6
+          font: 15px 'ProximaNovaCond-Regular'
+          text-transform: uppercase
+          margin-bottom: 0
+          margin-left: 5px
+      .footer__list
+        width: 222px
+        margin: 10px 0 10px 20px
+        //display: flex
+        //flex-flow: column
+        //align-items: flex-start
+        li
+          width: 222px
+          color: #fff
+          font: 16px 'ProximaNovaCond-Regular'
+          line-height: 20px
+          padding: 3px 0
+          a
+            color: #fff
+            text-decoration: none
+            &:hover
+              color: $orange
+    @media (max-width: 1200px)
+      flex-flow: wrap
+
+
+
+
+.footer-social
+  width: 100%
+  height: auto
+  .footer__list
+    width: 100%
+    height: auto
+    padding: 0
+    li
+      width: auto !important
+      display: inline-block
+      a
+        display: inline-block
+        width: 29px
+        height: 29px
+        margin-right: 7px
+        margin-top: 5px
+
+.footer-copyright
+  width: 100%
+  height: auto
+  .footer__logo
+    width: 100%
+    height: 52px
+    display: flex
+    justify-content: center
+    margin-bottom: 18px
+    &--img
+      width: auto
+      height: 100%
+      object-fit: contain
+      margin-right: 10px
+    &--txt
+      line-height: .9
+      h2, h3
+        margin: 0
+      h2
+        font-size: 43px
+      h3
+        font-size: 15px
+  p, a
+    font-size: 14px
+    color: #fff
+    text-align: center
+    @media (max-width: 768px)
+      font-size: 10px
+  a
+    text-decoration: underline
+    &:hover
+      color: $orange
+      //text-decoration: none
+
+
+.social-facebook
+  background: url(../img/@2x/vit-icons-2.png) no-repeat -16px -7px
+.social-vk
+  background: url(../img/@2x/vit-icons-2.png) no-repeat -52px -7px
+.social-insta
+  background: url(../img/@2x/vit-icons-2.png) no-repeat -87px -7px
+.social-yt
+  background: url(../img/@2x/vit-icons-2.png) no-repeat -121px -7px

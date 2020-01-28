@@ -1,0 +1,57 @@
+.architect-styles
+  width: 100%
+  height: auto
+  background: url("../img/@2x/wooden_house_forest.jpg") no-repeat 50% 60%, center / cover
+  //background: url("../img/@2x/wooden_house_forest.jpg") no-repeat, center / cover
+  overflow: hidden
+  padding-bottom: 70px
+  .title-section
+    //margin-bottom: 20px
+  &__list
+    width: 100%
+    height: auto
+    display: flex
+    flex-flow: wrap
+    justify-content: space-around
+    align-items: center
+    &--item
+      width: 100%
+      height: auto
+      max-width: 216px
+      margin: 0 6px
+      @media (max-width: 480px)
+        max-width: 135px
+      a
+        width: 100%
+        height: auto
+        display: flex
+        flex-flow: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        text-decoration: none
+        &:hover
+          h3
+            color: $orange
+          img
+            box-shadow: 1px 1px 10px 2px #fff
+      img
+        width: 100%
+        height: auto
+        max-width: 193px
+        max-height: 193px
+        border-radius: 50%
+        margin: 20px auto
+        transition: .3s
+      h3
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 20px
+        line-height: 20px
+        background: #463212
+        border-radius: 7px
+        padding: 3px
+        margin: 0
+        transition: .3s

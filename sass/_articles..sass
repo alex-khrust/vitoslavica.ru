@@ -1,0 +1,211 @@
+.articles-page
+  h2
+    font: 16px ProximaNovaRegular
+    color: $darkbrown
+    text-transform: uppercase
+  p
+    margin-bottom: 20px
+    line-height: 18px
+  ol
+    padding: 0
+    margin-left: 20px
+    margin-bottom: 10px
+  &>.row
+    max-width: 1134px
+    margin: 0 auto
+    &>.col-12>ul
+      margin-bottom: 20px
+      li
+        list-style-type: circle
+        margin-left: 20px
+    blockquote
+      -moz-border-bottom-colors: none
+      -moz-border-left-colors: none
+      -moz-border-right-colors: none
+      -moz-border-top-colors: none
+      border-color: #e0e0e0!important
+      background-color: #f1f1f1!important
+      border-image: none
+      border-style: solid
+      border-width: 1px 1px 1px 3px
+      margin-left: 30px
+      padding: 15px
+
+    img
+      width: 100%
+      height: auto
+      max-width: 100%
+      display: block
+      margin: 20px auto
+      border: 3px solid #4c2b00
+      position: relative
+      box-shadow: 0 0 0 3px #f7ecd8, 0 0 0 4px #4c2b00
+
+
+.article-projects
+  width: 100%
+  height: auto
+  background-color: rgba(0,0,0,.1)
+  text-align: center
+  margin: 20px auto !important
+  padding: 5px 0 !important
+  h3
+    display: block
+    font: bold 16px ProximaNovaRegular
+    color: $darkbrown
+    margin: 10px
+  &__list
+    width: 100%
+    height: auto
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-flow: wrap
+    margin-bottom: 0 !important
+    li
+      width: 100%
+      max-width: 228px
+      height: auto
+      margin: 10px !important
+      a
+        font-size: 14px
+        line-height: 18px
+        text-decoration: underline
+        color: $darkbrown
+        img
+          max-width: 100% !important
+          border: 3px solid #4c2b00 !important
+          position: relative !important
+          box-shadow: 0 0 0 3px #f7ecd8, 0 0 0 4px #4c2b00 !important
+          margin: 0 !important
+        span
+          display: block
+          font-weight: bold
+          text-decoration: underline
+          margin-top: 10px
+          color: $darkbrown
+
+.triple
+  .article-projects__list
+    li
+      max-width: 342px !important
+.dubl
+  .article-projects__list
+    li
+      max-width: 374px !important
+
+
+.articles__list
+  width: 100%
+  height: auto
+  display: flex
+  flex-flow: wrap
+  padding: 10px 50px
+  margin: 0 auto
+  @media (max-width: 650px)
+    padding: 0
+
+  &--item
+    width: 100%
+    height: auto
+    max-width: 500px
+    min-height: 185px
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 10px
+    margin: 20px auto 30px auto
+    @media (max-width: 560px)
+      flex-flow: wrap
+      .blog-image-wrap
+        margin-right: 0
+
+.blog-image-wrap
+  float: left
+  margin-right: 14px
+  margin-bottom: 2px
+  padding: 3px
+  border: 1px solid #4c2b00
+  border-radius: 90px
+
+.blog-image
+  width: 143px
+  height: 143px
+  overflow: hidden
+  border-radius: 90px
+  position: relative
+  border: 2px solid #4c2b00
+
+.blog-image div a img
+  border-radius: 5px
+  box-shadow: 0 0 30px -10px #000
+
+.image img, .image2 img, .image3 img
+  vertical-align: top
+  position: relative!important
+  text-align: center
+  left: 0!important
+
+.desc-wrap
+  width: 100%
+  //max-width: 315px
+  min-height: 150px
+  color: #4c2b00
+
+.marginbottom5
+  margin-bottom: 5px
+
+
+.desc-wrap h2
+  margin: 0 0 5px 0 !important
+  color: #4c2b00 !important
+  font-size: 18px !important
+  font-family: CyrillicOld !important
+
+.name.marginbottom5 a
+  text-shadow: none
+  text-transform: none
+  background: 0
+
+
+.desc-wrap .name a
+  padding: 0!important
+  font-size: 18px!important
+  line-height: 18px
+
+
+a.blog-title
+  word-spacing: 1px
+  letter-spacing: 0
+
+
+.desc-wrap .record_description
+  height: 78px
+  overflow: hidden
+
+
+.record_description
+  font-size: 14px
+  line-height: 19px
+
+
+.description.record_description p
+  margin-bottom: 0
+
+
+.desc-wrap .record_description p
+  height: 80px
+  font-size: 14px
+
+
+.desc-wrap .news-enter
+  text-align: right
+
+
+.desc-wrap .news-enter a
+  font-size: 14px
+  color: #4c2b00
+  text-decoration: underline
+  font-weight: bold
+  line-height: 22px
+

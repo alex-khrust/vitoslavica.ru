@@ -1,0 +1,54 @@
+.product__equipment
+  margin-bottom: 40px !important
+  &-list
+   li
+     margin-bottom: 30px
+  .type-komplect
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    border: 1px solid #70af43
+    justify-content: flex-start
+    position: relative
+
+    .title
+      font: 22px "ProximaNovaRegular"
+      position: relative
+      background-color: #70af43
+
+    .title, .price
+      color: #fff
+      padding: 12px
+      text-align: center
+      margin: 0
+
+    .price
+      margin-top: auto
+      font: 20px "ProximaNovaRegular"
+      position: relative
+      width: 100%
+      background-color: #70af43
+
+
+    .image
+      max-height: 234px
+      overflow: hidden
+      position: relative
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        border-bottom-left-radius: 50%
+        @media (max-width: 568px)
+          object-fit: contain
+
+
+    ul
+      display: inline-block
+      list-style-image: url(https://vitoslavica.ru//img/list-dot2.png)
+      width: 80%
+      margin: 25px auto
+      min-height: 258px
+      li
+        margin-bottom: 5px

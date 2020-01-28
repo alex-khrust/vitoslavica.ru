@@ -1,0 +1,80 @@
+.video-reviews
+  width: 100%
+  height: auto
+  display: block
+  margin-bottom: 10px
+  .title-section
+    margin: 0 auto 0
+  &__list
+    padding: 0 40px
+    margin: 0 auto
+    .owl-nav
+      top: 50%
+      left: 0 !important
+    .owl-nav button
+      margin: 0 !important
+    li
+      width: 100%
+      height: auto
+      max-width: 278px
+      padding: 0 15px
+      img
+        width: 100%
+        box-shadow: 0 0 20px -5px #000
+        //cursor: pointer
+        margin: 20px auto
+        &:hover
+          box-shadow: 0 0 15px #10831a
+  .owl-nav
+    z-index: -1 !important
+
+
+.reviews-page
+  .video-reviews
+    ul
+      width: 100%
+      height: auto
+      display: flex
+      flex-flow: wrap
+      justify-content: center
+      margin: 0 auto
+      li
+        width: 100%
+        height: auto
+        max-width: 500px
+        display: flex
+        background: none
+        color: #4c2b00
+        flex-flow: wrap
+        margin: 40px 0
+      a
+        width: auto
+        height: auto
+        display: inline-block
+        margin-bottom: 15px
+        margin-right: 15px
+      img
+        border: 3px solid #4c2b00
+        box-shadow: 0 0 0 3px #f7ecd8, 0 0 0 4px #4c2b00
+      .video-test-desc
+        width: 100%
+        height: 100%
+        max-width: 230px
+        max-height: 140px
+        display: inline-block
+        a
+          text-decoration: underline
+          color: $darkbrown
+          &:hover
+            text-decoration: none
+      .name-otziv
+        margin-top: -5px
+        font-size: 14px
+        color: #4c2b00
+        font-weight: bold
+        padding: 0
+        line-height: 19px
+      @media (max-width: 1200px)
+        li
+          max-width: 221px
+          margin: 20px 40px

@@ -1,0 +1,763 @@
+section.calculator
+  width: 100%
+  height: auto
+  .calculator-house form
+    width: 100%
+    max-width: 100% !important
+    padding: 15px
+    margin: 10px 0 20px
+  /*background: rgba(155,138,102,0.5)*/
+
+  .calculator-result
+    padding: 15px 95px
+    color: #4e3800
+    font-size: 16px
+    li
+      width: 100%
+      display: flex
+      align-items: baseline
+      margin-bottom: 10px
+      strong
+        margin-right: 10px
+    .price
+      font-size: 32px
+      color: #4e3800
+      font-weight: 600
+      margin-right: 7px
+
+  .calculator-house .filter-item
+    width: 100% !important
+    display: -webkit-box
+    display: -moz-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    -webkit-align-items: center
+    align-items: center
+    -webkit-align-content: center
+    align-content: center
+    justify-content: flex-start
+    margin-bottom: 16px
+
+  .calculator-house .filter-item > div
+    display: -webkit-box
+    display: -moz-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    -webkit-align-items: center
+    align-items: center
+    vertical-align: middle
+    margin-right: 8px
+
+  .calculator-house .filter-item .filter-name
+    width: 82px
+    margin-right: 8px
+    color: #4e3800
+
+  .calculator-house .filter-item .item
+    padding: 10px 8px 10px 8px
+    background: rgba(78,56,0,0.2)
+    width: 180px
+    color: #4e3800
+    cursor: pointer
+    line-height: 14px
+    font-size: 14px
+    height: 48px
+  //text-align: right
+
+  .calculator-house .img-calc
+    width: 30px
+    height: 25px
+    min-width: 30px
+    display: inline-block
+    vertical-align: middle
+    margin-right: 8px
+    background-repeat: no-repeat
+    background-image: url(../img/@2x/sprite.png)
+
+  .calculator-house .filter-item .item:hover, .calculator-house .filter-item .item.active
+    background: rgba(78,56,0,1)
+    color: #fff
+
+  .calculator-house .square .img-calc
+    background-position: center 0
+
+  .calculator-house .square .item:hover .img-calc, .calculator-house .square .item.active .img-calc
+    background-position: center -25px
+
+  .calculator-house .floor .item:nth-child(2) .img-calc
+    background-position: center -54px
+
+  .calculator-house .floor .item:nth-child(3) .img-calc
+    background-position: center -108px
+
+  .calculator-house .floor .item:nth-child(4) .img-calc
+    background-position: center -169px
+
+  .calculator-house .floor .item:nth-child(2):hover .img-calc, .calculator-house .floor .item:nth-child(2).active .img-calc
+    background-position: center -79px
+
+  .calculator-house .floor .item:nth-child(3):hover .img-calc, .calculator-house .floor .item:nth-child(3).active .img-calc
+    background-position: center -138px
+
+  .calculator-house .floor .item:nth-child(4):hover .img-calc, .calculator-house .floor .item:nth-child(4).active .img-calc
+    background-position: center -200px
+
+  .calculator-house .base .item:nth-child(2) .img-calc
+    background-position: center -1416px
+
+  /*.calculator-house .base .item:nth-child(3) .img-calcbackground-position: center -233px*/
+  .calculator-house .base .item:nth-child(3) .img-calc
+    background-position: center -295px
+
+  .calculator-house .base .item:nth-child(4) .img-calc
+    background-position: center -506px
+
+  .calculator-house .base .item:nth-child(6) .img-calc
+    background-image: none
+    background-color: #4e3800
+    width: 25px
+    margin-left: 5px
+    margin-right: 5px
+    border-radius: 2px
+
+  .calculator-house .base .item:nth-child(7) .img-calc
+    background-position: center -362px
+
+  .calculator-house .base .item:nth-child(2):hover .img-calc, .calculator-house .base .item:nth-child(2).active .img-calc
+    background-position: center -1454px
+
+  /*.calculator-house .base .item:nth-child(3):hover .img-calc, .calculator-house .base .item:nth-child(3).active .img-calcbackground-position: center -261px*/
+  .calculator-house .base .item:nth-child(3):hover .img-calc, .calculator-house .base .item:nth-child(3).active .img-calc
+    background-position: center -328px
+
+  .calculator-house .base .item:nth-child(4):hover .img-calc, .calculator-house .base .item:nth-child(4).active .img-calc
+    background-position: center -542px
+
+  .calculator-house .base .item:nth-child(6):hover .img-calc, .calculator-house .base .item:nth-child(6).active .img-calc
+    background-color: #fff
+
+  .calculator-house .base .item:nth-child(7):hover .img-calc, .calculator-house .base .item:nth-child(7).active .img-calc
+    background-position: center -398px
+
+  .calculator-house .wall .item:nth-child(2) .img-calc, .calculator-house .wall .item:nth-child(3) .img-calc
+    background-position: center -1337px
+
+  .calculator-house .wall .item:nth-child(4) .img-calc, .calculator-house .wall .item:nth-child(5) .img-calc
+    background-position: center -1250px
+
+  .calculator-house .roof .item:nth-child(2) .img-calc, .calculator-house .roof .item:nth-child(3) .img-calc
+    background-position: center -1095px
+
+  .calculator-house .roof .item:nth-child(4) .img-calc, .calculator-house .roof .item:nth-child(5) .img-calc
+    background-position: center -1166px
+
+  .calculator-house .wall .item:nth-child(2):hover .img-calc, .calculator-house .wall .item:nth-child(3):hover .img-calc, .calculator-house .wall .item:nth-child(2).active .img-calc, .calculator-house .wall .item:nth-child(3).active .img-calc
+    background-position: center -1373px
+
+  .calculator-house .wall .item:nth-child(4):hover .img-calc, .calculator-house .wall .item:nth-child(5):hover .img-calc, .calculator-house .wall .item:nth-child(4).active .img-calc, .calculator-house .wall .item:nth-child(5).active .img-calc
+    background-position: center -1292px
+
+  .calculator-house .roof .item:nth-child(2):hover .img-calc, .calculator-house .roof .item:nth-child(3):hover .img-calc, .calculator-house .roof .item:nth-child(2).active .img-calc, .calculator-house .roof .item:nth-child(3).active .img-calc
+    background-position: center -1128px
+
+  .calculator-house .roof .item:nth-child(4):hover .img-calc, .calculator-house .roof .item:nth-child(5):hover .img-calc, .calculator-house .roof .item:nth-child(4).active .img-calc, .calculator-house .roof .item:nth-child(5).active .img-calc
+    background-position: center -1203px
+
+  .calculator-house .engineering .item:nth-child(2) .img-calc
+    background-position: center -804px
+
+  .calculator-house .engineering .item:nth-child(3) .img-calc
+    background-position: center -659px
+
+  .calculator-house .engineering .item:nth-child(4) .img-calc
+    background-position: center -881px
+
+  .calculator-house .engineering .item:nth-child(5) .img-calc
+    background-position: center -735px
+
+  .calculator-house .engineering .item:nth-child(6) .img-calc
+    background-position: center -585px
+
+  .calculator-house .engineering .item:nth-child(2):hover .img-calc, .calculator-house .engineering .item:nth-child(2).active .img-calc
+    background-position: center -840px
+
+  .calculator-house .engineering .item:nth-child(3):hover .img-calc, .calculator-house .engineering .item:nth-child(3).active .img-calc
+    background-position: center -692px
+
+  .calculator-house .engineering .item:nth-child(4):hover .img-calc, .calculator-house .engineering .item:nth-child(4).active .img-calc
+    background-position: center -912px
+
+  .calculator-house .engineering .item:nth-child(5):hover .img-calc, .calculator-house .engineering .item:nth-child(5).active .img-calc
+    background-position: center -768px
+
+  .calculator-house .engineering .item:nth-child(6):hover .img-calc, .calculator-house .engineering .item:nth-child(6).active .img-calc
+    background-position: center -619px
+
+  .calculator-house .finish .item:nth-child(2) .img-calc, .calculator-house .finish .item:nth-child(4) .img-calc
+    background-position: center -946px
+
+  .calculator-house .finish .item:nth-child(3) .img-calc
+    background-position: center -1015px
+
+  .calculator-house .finish .item:nth-child(5) .img-calc
+    background-position: center -585px
+
+  .calculator-house .finish .item:nth-child(2):hover .img-calc, .calculator-house .finish .item:nth-child(4):hover .img-calc, .calculator-house .finish .item:nth-child(2).active .img-calc, .calculator-house .finish .item:nth-child(4).active .img-calc
+    background-position: center -978px
+
+  .calculator-house .finish .item:nth-child(3):hover .img-calc, .calculator-house .finish .item:nth-child(3).active .img-calc
+    background-position: center -1053px
+
+  .calculator-house .finish .item:nth-child(5):hover .img-calc, .calculator-house .finish .item:nth-child(5).active .img-calc
+    background-position: center -619px
+
+  .calculator-house .center-block, .calculator-result .center-block
+    text-align: center
+
+  .calculator-house .btn, .calculator-result .btn
+    background: none
+    border: 1px solid #4e3800
+    color: #4e3800
+    font-size: 16px
+    border-radius: 0
+    margin: 24px auto
+    padding: 8px 34px
+
+  .calculator-house .btn:hover, .calculator-result .btn:hover
+    background: #4e3800
+    color: #fff
+
+  .calculator-h2
+    padding: 24px
+    color: #4e3800
+    font-size: 32px
+    font-weight: 400
+    text-transform: none
+    float: left
+
+  .calc-btn
+    border: 1px solid #4e3800
+    color: #4e3800!important
+    font-size: 16px
+    border-radius: 0
+    padding: 8px 34px
+    display: inline-block
+
+  .calc-btn:hover
+    background: #4e3800
+    color: #fff!important
+
+  .calc-btn.right
+    display: block
+    float: right
+    margin-top: 42px
+
+  .clearfix
+    clear: both
+
+  .new-header-info
+    position: relative
+
+  .scroll-header .calculator-link
+    left: -70px
+
+  .search
+    width: 130px
+    height: 40px
+    background: #006096
+    margin-left: -4px
+    vertical-align: bottom
+    border: 2px solid #005381
+    border-left-width: 1px
+    position: relative
+    text-align: center
+    padding: 7px 0
+
+  .search input
+    width: 90%
+    background: #006096
+    border: 1px solid #769fb6
+    color: #fff
+
+  .search button
+    position: absolute
+    display: inline-block
+    width: 13px
+    height: 13px
+    background: url(../img/@2x/search.png)no-repeat 0 0
+    border: none
+    outline: none
+    right: 11px
+    top: 12px
+
+  .superheadermenu .new-header ul li a, .superheadermenu .new-header ul li.active, .header-new-menu-small ul li a
+    padding: 12px 16px
+
+  .superheadermenu .new-header ul li a:before, .superheadermenu .new-header ul li.active:before, .header-new-menu-small ul li a:before
+    left: 4px
+
+  .search input
+    height: 21px
+
+  .success, .warning, .attention, .information, .rev-success
+    float: left
+
+  .success, .warning, .attention, .information, .rev-success
+    padding: 10px 10px 10px 10px
+    margin-bottom: 5px
+    color: #555
+
+  .warning
+    background: #ffd1d1 url(../img/_src/warning.png) 10px center no-repeat
+    border: 1px solid #f8acac
+    padding-left: 30px!important
+
+  .success, .warning, .attention, .information
+    padding: 10px 10px 10px 33px
+    margin-bottom: 15px
+
+
+  .calculator-result
+    padding: 15px 95px
+    color: #4e3800
+    font-size: 16px
+
+
+
+  @media (max-width: 1199px)
+    .new-header
+      min-height: 136px
+
+    .superheadermenu .new-header ul li.active
+      padding: 12px 16px!important
+
+    .scroll-header .calculator-link
+      left: -100px
+
+  @media (max-width: 991px)
+    .calculator-link
+      left: 17px
+      top: -42px
+
+    .scroll-header .calculator-link
+      left: -93px
+      top: 0
+
+    .calculator-house .filter-item
+      flex-wrap: wrap
+      width: 100%
+
+    .calculator-house .filter-name
+      flex: 2 100%
+      margin-bottom: 8px
+
+    .calculator-house .filter-item .item
+      margin-bottom: 8px
+
+    .search
+      width: 95px
+
+  @media (max-width: 767px)
+    .scroll-header .calculator-link
+      display: none
+
+    #header
+      padding-top: 0
+
+    .new-header
+      min-height: 214px
+
+    .search
+      display: block!important
+      width: 99%!important
+      margin-left: 4px
+
+    .search input
+      height: 25px
+
+    .calculator-result
+      padding: 15px 0
+
+    .calculator-link
+      position: static
+
+  @media (max-width: 635px)
+    .recent-project
+      padding: 0
+
+    .calculator-link
+      left: 83px
+      top: 39px
+      font-size: 12px
+
+  @media (max-width: 435px)
+    .calc-btn.right
+      display: block
+      float: none
+      margin-top: 0
+      text-align: center
+      margin-bottom: 12px
+
+    .calculator-h2
+      float: none
+
+  @media (max-width: 389px)
+    .calculator-house .filter-item .item
+      width: 100%
+
+    .calculator-house form
+      width: 100%
+      max-width: 100%
+      padding: 15px 0
+      margin: 10px 15px 20px
+    /*background: rgba(155,138,102,0.5)*/
+
+    .calculator-result
+      padding: 15px 95px
+      color: #4e3800
+      font-size: 16px
+
+    .calculator-house .filter-item
+      margin-bottom: 16px
+      display: -webkit-box
+      display: -moz-box
+      display: -ms-flexbox
+      display: -webkit-flex
+      display: flex
+      -webkit-align-items: center
+      align-items: center
+      -webkit-align-content: center
+      align-content: center
+      justify-content: flex-start
+
+    .calculator-house .filter-item > div
+      display: -webkit-box
+      display: -moz-box
+      display: -ms-flexbox
+      display: -webkit-flex
+      display: flex
+      -webkit-align-items: center
+      align-items: center
+      vertical-align: middle
+      margin-right: 8px
+
+    .calculator-house .filter-item .filter-name
+      width: 82px
+      margin-right: 8px
+      color: #4e3800
+
+    .calculator-house .filter-item .item:hover, .calculator-house .filter-item .item.active
+      background: rgba(78,56,0,1)
+      color: #fff
+
+    .calculator-house .square .img-calc
+      background-position: center 0
+
+    .calculator-house .square .item:hover .img-calc, .calculator-house .square .item.active .img-calc
+      background-position: center -25px
+
+    .calculator-house .floor .item:nth-child(2) .img-calc
+      background-position: center -54px
+
+    .calculator-house .floor .item:nth-child(3) .img-calc
+      background-position: center -108px
+
+    .calculator-house .floor .item:nth-child(4) .img-calc
+      background-position: center -169px
+
+    .calculator-house .floor .item:nth-child(2):hover .img-calc, .calculator-house .floor .item:nth-child(2).active .img-calc
+      background-position: center -79px
+
+    .calculator-house .floor .item:nth-child(3):hover .img-calc, .calculator-house .floor .item:nth-child(3).active .img-calc
+      background-position: center -138px
+
+    .calculator-house .floor .item:nth-child(4):hover .img-calc, .calculator-house .floor .item:nth-child(4).active .img-calc
+      background-position: center -200px
+
+    .calculator-house .base .item:nth-child(2) .img-calc
+      background-position: center -1416px
+
+    /*.calculator-house .base .item:nth-child(3) .img-calcbackground-position: center -233px*/
+    .calculator-house .base .item:nth-child(3) .img-calc
+      background-position: center -295px
+
+    .calculator-house .base .item:nth-child(4) .img-calc
+      background-position: center -506px
+
+    .calculator-house .base .item:nth-child(6) .img-calc
+      background-image: none
+      background-color: #4e3800
+      width: 25px
+      margin-left: 5px
+      margin-right: 5px
+      border-radius: 2px
+
+    .calculator-house .base .item:nth-child(7) .img-calc
+      background-position: center -362px
+
+    .calculator-house .base .item:nth-child(2):hover .img-calc, .calculator-house .base .item:nth-child(2).active .img-calc
+      background-position: center -1454px
+
+    /*.calculator-house .base .item:nth-child(3):hover .img-calc, .calculator-house .base .item:nth-child(3).active .img-calcbackground-position: center -261px*/
+    .calculator-house .base .item:nth-child(3):hover .img-calc, .calculator-house .base .item:nth-child(3).active .img-calc
+      background-position: center -328px
+
+    .calculator-house .base .item:nth-child(4):hover .img-calc, .calculator-house .base .item:nth-child(4).active .img-calc
+      background-position: center -542px
+
+    .calculator-house .base .item:nth-child(6):hover .img-calc, .calculator-house .base .item:nth-child(6).active .img-calc
+      background-color: #fff
+
+    .calculator-house .base .item:nth-child(7):hover .img-calc, .calculator-house .base .item:nth-child(7).active .img-calc
+      background-position: center -398px
+
+    .calculator-house .wall .item:nth-child(2) .img-calc, .calculator-house .wall .item:nth-child(3) .img-calc
+      background-position: center -1337px
+
+    .calculator-house .wall .item:nth-child(4) .img-calc, .calculator-house .wall .item:nth-child(5) .img-calc
+      background-position: center -1250px
+
+    .calculator-house .roof .item:nth-child(2) .img-calc, .calculator-house .roof .item:nth-child(3) .img-calc
+      background-position: center -1095px
+
+    .calculator-house .roof .item:nth-child(4) .img-calc, .calculator-house .roof .item:nth-child(5) .img-calc
+      background-position: center -1166px
+
+    .calculator-house .wall .item:nth-child(2):hover .img-calc, .calculator-house .wall .item:nth-child(3):hover .img-calc, .calculator-house .wall .item:nth-child(2).active .img-calc, .calculator-house .wall .item:nth-child(3).active .img-calc
+      background-position: center -1373px
+
+    .calculator-house .wall .item:nth-child(4):hover .img-calc, .calculator-house .wall .item:nth-child(5):hover .img-calc, .calculator-house .wall .item:nth-child(4).active .img-calc, .calculator-house .wall .item:nth-child(5).active .img-calc
+      background-position: center -1292px
+
+    .calculator-house .roof .item:nth-child(2):hover .img-calc, .calculator-house .roof .item:nth-child(3):hover .img-calc, .calculator-house .roof .item:nth-child(2).active .img-calc, .calculator-house .roof .item:nth-child(3).active .img-calc
+      background-position: center -1128px
+
+    .calculator-house .roof .item:nth-child(4):hover .img-calc, .calculator-house .roof .item:nth-child(5):hover .img-calc, .calculator-house .roof .item:nth-child(4).active .img-calc, .calculator-house .roof .item:nth-child(5).active .img-calc
+      background-position: center -1203px
+
+    .calculator-house .engineering .item:nth-child(2) .img-calc
+      background-position: center -804px
+
+    .calculator-house .engineering .item:nth-child(3) .img-calc
+      background-position: center -659px
+
+    .calculator-house .engineering .item:nth-child(4) .img-calc
+      background-position: center -881px
+
+    .calculator-house .engineering .item:nth-child(5) .img-calc
+      background-position: center -735px
+
+    .calculator-house .engineering .item:nth-child(6) .img-calc
+      background-position: center -585px
+
+    .calculator-house .engineering .item:nth-child(2):hover .img-calc, .calculator-house .engineering .item:nth-child(2).active .img-calc
+      background-position: center -840px
+
+    .calculator-house .engineering .item:nth-child(3):hover .img-calc, .calculator-house .engineering .item:nth-child(3).active .img-calc
+      background-position: center -692px
+
+    .calculator-house .engineering .item:nth-child(4):hover .img-calc, .calculator-house .engineering .item:nth-child(4).active .img-calc
+      background-position: center -912px
+
+    .calculator-house .engineering .item:nth-child(5):hover .img-calc, .calculator-house .engineering .item:nth-child(5).active .img-calc
+      background-position: center -768px
+
+    .calculator-house .engineering .item:nth-child(6):hover .img-calc, .calculator-house .engineering .item:nth-child(6).active .img-calc
+      background-position: center -619px
+
+    .calculator-house .finish .item:nth-child(2) .img-calc, .calculator-house .finish .item:nth-child(4) .img-calc
+      background-position: center -946px
+
+    .calculator-house .finish .item:nth-child(3) .img-calc
+      background-position: center -1015px
+
+    .calculator-house .finish .item:nth-child(5) .img-calc
+      background-position: center -585px
+
+    .calculator-house .finish .item:nth-child(2):hover .img-calc, .calculator-house .finish .item:nth-child(4):hover .img-calc, .calculator-house .finish .item:nth-child(2).active .img-calc, .calculator-house .finish .item:nth-child(4).active .img-calc
+      background-position: center -978px
+
+    .calculator-house .finish .item:nth-child(3):hover .img-calc, .calculator-house .finish .item:nth-child(3).active .img-calc
+      background-position: center -1053px
+
+    .calculator-house .finish .item:nth-child(5):hover .img-calc, .calculator-house .finish .item:nth-child(5).active .img-calc
+      background-position: center -619px
+
+    .calculator-house .center-block, .calculator-result .center-block
+      text-align: center
+
+    .calculator-house .btn, .calculator-result .btn
+      background: none
+      border: 1px solid #4e3800
+      color: #4e3800
+      font-size: 16px
+      border-radius: 0
+      margin: 24px auto
+      padding: 8px 34px
+
+    .calculator-house .btn:hover, .calculator-result .btn:hover
+      background: #4e3800
+      color: #fff
+
+    .calculator-result .price
+      font-size: 32px
+      color: #4e3800
+      font-weight: 600
+      padding-left: 12px
+
+    .calculator-h2
+      padding: 24px
+      color: #4e3800
+      font-size: 32px
+      font-weight: 400
+      text-transform: none
+      float: left
+
+    .calc-btn
+      border: 1px solid #4e3800
+      color: #4e3800!important
+      font-size: 16px
+      border-radius: 0
+      padding: 8px 34px
+      display: inline-block
+
+    .calc-btn:hover
+      background: #4e3800
+      color: #fff!important
+
+    .calc-btn.right
+      display: block
+      float: right
+      margin-top: 42px
+
+    .clearfix
+      clear: both
+
+    .new-header-info
+      position: relative
+
+    .scroll-header .calculator-link
+      left: -70px
+
+    .search
+      width: 130px
+      height: 40px
+      background: #006096
+      margin-left: -4px
+      vertical-align: bottom
+      border: 2px solid #005381
+      border-left-width: 1px
+      position: relative
+      text-align: center
+      padding: 7px 0
+
+    .search input
+      width: 90%
+      background: #006096
+      border: 1px solid #769fb6
+      color: #fff
+
+    .search button
+      position: absolute
+      display: inline-block
+      width: 13px
+      height: 13px
+      background: url(/assets/image/search.png)no-repeat 0 0
+      border: none
+      outline: none
+      right: 11px
+      top: 12px
+
+    .superheadermenu .new-header ul li a, .superheadermenu .new-header ul li.active, .header-new-menu-small ul li a
+      padding: 12px 16px
+
+    .superheadermenu .new-header ul li a:before, .superheadermenu .new-header ul li.active:before, .header-new-menu-small ul li a:before
+      left: 4px
+
+    .search input
+      height: 21px
+
+
+
+  @media (max-width: 1199px)
+    .new-header
+      min-height: 136px
+
+    .superheadermenu .new-header ul li.active
+      padding: 12px 16px!important
+
+    .scroll-header .calculator-link
+      left: -100px
+
+  @media (max-width: 991px)
+    .calculator-link
+      left: 17px
+      top: -42px
+
+    .scroll-header .calculator-link
+      left: -93px
+      top: 0
+
+    .calculator-house .filter-item
+      flex-wrap: wrap
+      width: 100%
+
+    .calculator-house .filter-name
+      flex: 2 100%
+      margin-bottom: 8px
+
+    .calculator-house .filter-item .item
+      margin-bottom: 8px
+
+    .search
+      width: 95px
+
+  @media (max-width: 767px)
+    .scroll-header .calculator-link
+      display: none
+
+    #header
+      padding-top: 0
+
+    .new-header
+      min-height: 214px
+
+    .search
+      display: block!important
+      width: 99%!important
+      margin-left: 4px
+
+    .search input
+      height: 25px
+
+    .calculator-result
+      padding: 15px 0
+
+    .calculator-link
+      position: static
+
+  @media (max-width: 635px)
+    .recent-project
+      padding: 0
+
+    .calculator-link
+      left: 83px
+      top: 39px
+      font-size: 12px
+
+  @media (max-width: 435px)
+    .calc-btn.right
+      display: block
+      float: none
+      margin-top: 0
+      text-align: center
+      margin-bottom: 12px
+
+    .calculator-h2
+      float: none
+
+  @media (max-width: 389px)
+    .calculator-house .filter-item .item
+      width: 100%

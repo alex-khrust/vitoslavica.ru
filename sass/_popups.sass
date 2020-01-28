@@ -1,0 +1,626 @@
+.open
+  display: block !important
+
+
+#media_bg_popup
+  position:  fixed
+  z-index:  980
+  background:  rgba(0, 0, 0, 0.8)
+  bottom:  20px
+  left:  20px
+  width: 300px
+  font-family:  "ProximaNovaCond-Regular"
+  color: #fff
+  text-align: center
+  padding: 20px 10px
+  display: none
+#media_popup
+  padding:  5px 20px
+  position:  relative
+.popup_close
+  display: block
+  position: absolute
+  top: -5px
+  right: 5px
+  width: 20px
+  height: 20px
+  cursor: pointer
+  border-radius: 50%
+  background-color:  rgba(120,120,120,.5)
+  text-align: center
+  font-family:  Arial
+.popup_header
+  font-size: 22px
+.popup_postheader
+  font-size: 12px
+  margin-bottom: 10px
+.popup_youtube
+  padding:  5px 10px 4px 10px
+  background-color: #ff8019
+.popup_youtube span
+  display: block
+  text-align: center
+  font-size: 12px
+.popup_instagram
+
+#media_popup .popup_youtube, #media_popup .popup_instagram
+  display: block
+  line-height: 18px
+  color:  #fff
+.popup_youtube img, .popup_instagram img
+  float: left
+  margin-top: 3px
+
+
+
+
+//------------------------------------------------------
+
+.simplemodal-overlay
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.5)
+  cursor: default
+  display: none
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 999
+.simplemodal-container
+  min-width: 630px
+  min-height: 485px
+  display: none
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 1000
+#buySketch-container,
+#discount-container
+    min-height: auto
+#buySketch:before,
+#sendCalc:before,
+#callbackphone-left:before
+  background: none!important
+
+.simplemodal-container .simplemodal-data
+  background: #fff
+  box-sizing: content-box
+  padding: 0
+.simplemodal-container code
+  background: #141414
+  color: #bbb
+  display: block
+  font-size: 12px
+  margin-bottom: 12px
+  padding: 4px 6px 6px
+  line-height: 100%
+.simplemodal-container a
+  color: #ddd
+.simplemodal-container span.modalCloseImg
+  background-image: url(data:image/pngbase64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarY6xSsNQFEDPi6LiUCsEcXB4kygotupgxqQtRRCs1SHJ1qShSmkSXl7VfoSjWwcXd7/AyVFwUPwC/0Bx6uAQIYODCJ7p3MPlcsGo2HWnYZRhEGvVbjrS9Xw5+8QMUwDQCbPUbrUOAOIkjvjB5ysC4HnTrjsN/sZ8mCoNTIDtbpSFICpA/0KnGsQYMIN+qkHcAaY6addAPAClXu4vQCnI/Q0oKdfzQXwAZs/1fDDmADPIfQUwdXSpAWpJOlJnvVMtq5ZlSbubBJE8HmU6GmRyPw4TlSaqo6MukP8HwGK+2G46cq1qWXvr/DOu58vc3o8QgFh6LFpBOFTn3yqMnd/n4sZ4GQ5vYXpStN0ruNmAheuirVahvAX34y/Axk/96FpPYgAAACBjSFJNAAB6JQAAgIMAAPn/AACA6AAAUggAARVYAAA6lwAAF2/XWh+QAAAARUlEQVR42mJgYGB4zcDAYM+AH9hD1cEZ9gQU2uMUICCOIUHIRriCPCL9wpDHwMDwF0oT5es8Yp1gT6rnSA42rPJExyBgANMaHPIWqdIEAAAAAElFTkSuQmCC)
+  width: 11px
+  height: 11px
+  display: inline
+  z-index: 3200
+  position: absolute
+  top: 7px
+  right: 7px
+  cursor: pointer
+.dialogContentText h2
+  color: #BBB
+.callbackForm
+  text-align: left
+.rc5
+  border-radius: 5px 5px 5px 5px
+.cb-txt, .cb-txt-290, .cb-area
+  background: #fff
+  border: 1px solid #b2b5b7
+  border-radius: 5px
+  -moz-border-radius: 5px
+  -webkit-border-radius: 5px
+  -khtml-border-radius: 5px
+  color: #000
+  font-size: 14px
+  height: 24px
+  line-height: 24px
+  padding: 0 4px
+  width: 180px
+.fb-send
+  margin: 0
+.cb-txt-290
+  margin: 0 14px 0 0
+  width: 290px
+.cb-area
+  margin: 0 14px 0 0
+  width: 480px
+  height: 70px
+.cb-send
+  background: #18a6e5
+  border: 0
+  border-radius: 5px
+  -moz-border-radius: 5px
+  -webkit-border-radius: 5px
+  -khtml-border-radius: 5px
+  color: #000
+  cursor: pointer
+  font-size: 14px
+  height: 24px
+  padding-bottom: 3px
+  text-align: center
+  width: 125px
+.cb-send:hover
+  background: #0e6389
+#ui-datepicker-div
+  font-size: 12px
+.ui-timepicker-div .ui-widget-header
+  margin-bottom: 8px
+.ui-timepicker-div dl
+  text-align: left
+.ui-timepicker-div dl dt
+  height: 25px
+  margin-bottom: -25px
+.ui-timepicker-div dl dd
+  margin: 0 10px 10px 65px
+.ui-timepicker-div td
+  font-size: 90%
+.ui-tpicker-grid-label
+  background: 0
+  border: 0
+  margin: 0
+  padding: 0
+.ui-timepicker-rtl
+  direction: rtl
+.ui-timepicker-rtl dl
+  text-align: right
+.ui-timepicker-rtl dl dd
+  margin: 0 65px 10px 10px
+.simple-modal-overlay
+  position: fixed
+  display: block
+  z-index: 99998
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: #000
+  background-position: center center
+  background-repeat: no-repeat
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#fff), to(#291a49))
+  background: -webkit-radial-gradient(circle, #fff, #291a49)
+  background: -moz-radial-gradient(circle, #fff, #291a49)
+  background: -ms-radial-gradient(circle, #fff, #291a49)
+.simple-modal
+  width: 600px
+  left: 20px
+  top: 20px
+  position: fixed
+  margin: 0
+  color: #808080
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-size: 13px
+  font-weight: normal
+  line-height: 18px
+  background-color: #FFF
+  border: 1px solid #eaeefa
+  border: 1px solid rgba(234,238,250,0.6)
+  -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.6)
+  -moz-box-shadow: 0 0 3px rgba(0,0,0,0.6)
+  box-shadow: 0 0 3px rgba(0,0,0,0.6)
+  z-index: 99999
+  border-radius: 6px
+  -webkit-border-radius: 6px
+  -moz-border-radius: 6px
+.simple-modal .simple-modal-header
+  padding: 5px 15px
+  margin: 0
+  border-bottom: 1px solid #EEE
+.simple-modal .simple-modal-header h1
+  margin: 0
+  color: #404040
+  font-size: 18px
+  font-weight: bold
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  line-height: 36px
+.simple-modal a.close
+  position: absolute
+  right: 15px
+  top: 15px
+  color: #999
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-size: 17px
+  font-weight: normal
+  line-height: 10px
+  text-decoration: none
+.simple-modal a.close:hover
+  color: #444
+.simple-modal .simple-modal-body
+  padding: 15px
+.simple-modal .simple-modal-body div.contents
+  overflow: hidden
+.simple-modal .simple-modal-body p
+  font-size: 13px
+  font-weight: normal
+  color: #606060
+  line-height: 18px
+.simple-modal .simple-modal-body p img
+  display: block
+  margin: 0 auto 10px auto
+.simple-modal .simple-modal-footer
+  display: block
+  background-color: #f5f5f5
+  padding: 14px 15px 15px
+  border-top: 1px solid #EEE
+  -webkit-border-radius: 0 0 6px 6px
+  -moz-border-radius: 0 0 6px 6px
+  border-radius: 0 0 6px 6px
+  -webkit-box-shadow: inset 0 1px 0 #FFF
+  -moz-box-shadow: inset 0 1px 0 #FFF
+  box-shadow: inset 0 1px 0 #FFF
+  zoom: 1
+  margin-bottom: 0
+  text-align: center
+.simple-modal .simple-modal-footer a.btn
+  text-decoration: none
+  cursor: pointer
+  display: inline-block
+  background-repeat: no-repeat
+  padding: 5px 14px 6px
+  color: #333
+  font-size: 13px
+  line-height: normal
+  border: 1px solid transparent
+  -webkit-transition: .2s linear all
+  -moz-transition: .2s linear all
+  transition: .2s linear all
+  border-radius: 3px
+  -webkit-border-radius: 3px
+  -moz-border-radius: 3px
+.simple-modal .simple-modal-footer a.btn.primary
+  color: #FFF
+  text-shadow: 0 1px 0 rgba(0,0,0,0.25)
+  background-color: #999
+  background-repeat: repeat-x
+  margin-right: 15px
+.simple-modal .simple-modal-footer a.btn.primary:hover
+  border: 1px solid #444
+  background-color: #444
+.simple-modal .simple-modal-footer a.btn.secondary
+  padding: 5px 2px 6px
+.simple-modal .simple-modal-footer a.btn.secondary:hover
+  color: #999
+.simple-modal.draggable .simple-modal-header:hover
+  cursor: move
+  background-color: #f8f8f8
+  -webkit-border-top-left-radius: 6px
+  -webkit-border-top-right-radius: 6px
+  -moz-border-radius-topleft: 6px
+  -moz-border-radius-topright: 6px
+  border-top-left-radius: 6px
+  border-top-right-radius: 6px
+.simple-modal.loading .simple-modal-body
+  min-height: 60px
+  background: transparent url("http://vitoslavica.ru/assets/catalog/view/theme/theme349/image/loader.gif") no-repeat center center
+.simple-modal.loading .simple-modal-body div.contents
+  display: none
+.simple-modal.loading .close, .simple-modal.loading .simple-modal-header, .simple-modal.loading .simple-modal-footer
+  display: none
+.simple-modal.hide-header .simple-modal-header
+  display: none
+.simple-modal.hide-footer .simple-modal-footer
+  display: none
+
+
+
+.manager-page h1.style-1
+  font-size: 24px
+.manager-reason-title
+  font: 20px 'CyrillicOld'
+  text-align: center
+  margin-bottom: 10px
+.manager-page .blog-record-description
+  padding-bottom: 0
+.manager-page .price-title-underline
+  margin: 20px 0
+.manager-page .reason-list
+  display: block
+  width: 100%
+  margin: 0 auto
+  text-align: center
+.manager-page .reason-list .reason-list__item
+  display: inline-block
+  width: 240px
+  margin: 10px
+  vertical-align: top
+  padding-top: 85px
+  position: relative
+  font-size: 14px
+  font-weight: bold
+  text-transform: uppercase
+  text-align: center
+.manager-page .reason-list .reason-list__item:before
+  content: ''
+  position: absolute
+  top: 0
+  width: 80px
+  height: 80px
+  left: 50%
+  margin-left: -40px
+  background: url(../img/@2x/manager-page-icons.png) no-repeat
+.manager-page .reason-list .reason-list__item:nth-of-type(1):before
+  background-position: 0 -2px
+.manager-page .reason-list .reason-list__item:nth-of-type(2):before
+  background-position: -104px -2px
+.manager-page .reason-list .reason-list__item:nth-of-type(3):before
+  background-position: -209px -2px
+.manager-page .reason-list .reason-list__item:nth-of-type(4):before
+  background-position: 0 -98px
+.manager-page .reason-list .reason-list__item:nth-of-type(5):before
+  background-position: -209px -98px
+.manager-page .reason-list .reason-list__item:nth-of-type(6):before
+  background-position: -104px -98px
+.manager-form
+  margin-top: 20px
+  background: url(../img/@2x/manager-form-bg.png) repeat-y 40% 50%
+  padding: 10px 10px 20px 10px
+.manager-form-title, .manager-form-title-2, .manager-call-title, .manager-call-title-2
+  font: 24px/26px 'CyrillicOld'
+  text-align: center
+  margin: 5px auto
+.manager-form-title-2, .manager-call-title-2
+  font-size: 20px
+  color: #428310
+  margin-bottom: 25px
+.manager-form form
+  padding-left: 200px
+  line-height: 30px
+.manager-form form>div
+  margin: auto
+  line-height: 50px
+.manager-form form>div input[type="text"], .manager-call form>div input[type="text"]
+  background: #fff
+  border-radius: 16px
+  width: 170px
+  box-shadow: inset 0 0 1px 1px #e2aa53
+  border: 0
+  box-sizing: border-box
+  padding: 0 15px
+  margin: 0 10px
+.manager-form form>div input[type="text"].error, .manager-call form>div input[type="text"].error
+  background: rgba(255,0,0,0.1)
+.manager-form form>div:nth-last-of-type(1) input[type="text"]
+  width: 60px
+.manager-form form
+  color: #533d25
+  font-size: 14px
+.manager-form form>input[type="submit"], .manager-call form>input[type="submit"]
+  font-size: 13px
+  color: #fff
+  line-height: 40px
+  display: block
+  margin: 15px auto 5px auto
+  width: 210px
+  height: 40px
+  text-align: center
+  text-transform: uppercase
+  border: 0
+  background: url(../img/@2x/bg-btn-red.jpg)
+  text-shadow: 1px 1px 0 #ab6033
+  box-shadow: 1px 1px 5px #000
+  -moz-box-shadow: 1px 1px 5px #000
+  -webkit-box-shadow: 1px 1px 5px #000
+  border-radius: 5px
+  position: relative
+  left: -100px
+.manager-form form>div .span-1-f
+  padding-left: 15px
+.checkbox
+  vertical-align: top
+  margin: 0 3px 0 0
+  width: 40px
+  height: 30px
+.checkbox+label
+  cursor: pointer
+.checkbox:not(checked)
+  position: absolute
+  opacity: 0
+.checkbox:not(checked)+label
+  position: relative
+  padding: 0 0 0 50px
+  font-weight: normal
+  color: #533d25
+  margin-left: 10px
+  font-size: 14px
+.checkbox:not(checked)+label:before
+  content: ''
+  position: absolute
+  top: -4px
+  left: 0
+  width: 40px
+  height: 30px
+  border-radius: 16px
+  background: #fff
+  box-shadow: inset 0 0 1px 1px #e2aa53
+.checkbox:checked+label:before
+  background: #fff url(../img/@2x/manager-page-yes.png) no-repeat center
+.manager-form:after
+  content: ''
+  display: block
+  position: absolute
+  top: -60px
+  left: -10px
+  width: 320px
+  height: 480px
+  background: url(../img/@2x/manager-page-men.png) no-repeat 125% 82%
+  background-size: 350px
+.manager-form
+  position: relative
+.manager-form-down
+  color: #4e2e06
+  font-weight: bold
+  font-size: 20px
+  text-align: center
+  line-height: 26px
+  margin-top: 20px
+.manager-form-down a
+  color: #6c5130
+  font-size: 20px
+  text-decoration: underline
+.manager-form-down span
+  font-size: 24px
+.manager-form-down a:hover
+  color: rgba(108,80,48,0.75)
+.manager-call-title
+  height: 58px
+  line-height: 58px
+  margin-bottom: 10px
+  background: url(../img/@2x/new-title-bg.png) repeat-x 0 -1px
+  text-align: center
+  font-size: 22px
+  position: relative
+  width: 380px
+  background-size: contain
+.manager-call-title-2
+  color: #70af43
+  margin-bottom: 10px
+.manager-call-title:before
+  content: ''
+  width: 80px
+  height: 72px
+  position: absolute
+  top: -10px
+  left: -74px
+  background: url(../img/@2x/new-title-1.png) no-repeat center
+  background-size: 86%
+.manager-call-title:after
+  content: ''
+  width: 80px
+  height: 72px
+  position: absolute
+  top: -10px
+  right: -74px
+  background: url(../img/@2x/new-title-2.png) no-repeat center
+  background-size: 86%
+.manager-call .need-a-padding
+  padding-left: 50px
+.manager-call-title-2
+  line-height: 18px
+.manager-call
+  font-family: Arial, sans-serif!important
+  padding: 5px 10px!important
+  margin: 0 auto!important
+  max-width: 630px!important
+  border-radius: 20px
+  border: 3px solid #e2aa53!important
+  box-sizing: border-box!important
+.manager-call-wrap
+  width: 560px
+  margin: 0 auto
+.manager-call form
+  padding-left: 50px
+.manager-call:before
+  content: ''
+  width: 200px
+  height: 350px
+  position: absolute
+  top: 30px
+  left: -45px
+  background: url(../img/@2x/months-workerpng.png) no-repeat center
+  background-size: 195px
+  z-index: 1000
+.manager-call form>div
+  line-height: 35px
+.manager-call form>div input[type="text"]
+  height: 30px
+.manager-call form>div:nth-of-type(3), .manager-call form>div:nth-of-type(4)
+  line-height: 35px
+.manager-call form>div:nth-of-type(1) input
+  width: 200px
+.manager-call form>div:nth-of-type(2) input
+  width: 130px
+.manager-call form>div:nth-of-type(4) input[type="text"]
+  width: 60px
+.manager-call form>div:nth-of-type(4)
+  position: relative
+.manager-call .hidden-btn
+  position: absolute
+  text-align: center
+  width: 18px
+  height: 18px
+  line-height: 18px
+  font-size: 12px
+  font-weight: bold
+  box-shadow: inset 0 0 0 2px #fff, 0 2px 3px 1px #ddd
+  top: -6px
+  left: 257px
+  border-radius: 50%
+  background: #e25353
+  cursor: pointer
+.manager-call .hidden-btn.active
+  background: #b3b3b3
+.manager-call .hidden-btn:before
+  content: '?'
+  color: #fff
+  font-weight: bold
+  font-size: 11px
+.manager-call form>input[type="submit"]
+  left: -25px
+.simplemodal-close
+  position: absolute
+  top: 15px
+  right: 15px
+  width: 30px
+  height: 30px
+  z-index: 999
+  background: url(../img/@2x/modal-close-btn.png) no-repeat center
+  background-size: 25px
+.manager-call .hidden-text
+  font-size: 13px
+  line-height: 16px!important
+  display: none
+  border-top: 1px solid #ddd
+  border-bottom: 1px solid #ddd
+  margin: 5px 0
+  padding: 5px 0 0 0
+.manager-call .hidden-text.active
+  display: block
+.manager-page .content-area ul
+  padding-left: 20px
+  margin-bottom: 20px
+.manager-page .content-area ul li
+  list-style: disc
+@media(max-width: 1199px)
+  .manager-form:after
+    top: 0
+    left: -20px
+  .manager-form form>div
+    line-height: 10px
+  .manager-form form>div input:not([type="submit"])
+    margin: 10px
+  .manager-form form>div:nth-of-type(3), .manager-form form>div:nth-of-type(4)
+    margin: 15px 0
+  .manager-form form>div .span-1-f
+    display: block
+    padding-left: 0
+@media(max-width: 991px)
+  .manager-form
+    background-size: contain
+  .manager-form form
+    padding-left: 0
+  .manager-form:after
+    display: none
+  .manager-form form>div .span-2-f
+    display: block
+  .manager-form form>div
+    line-height: 20px
+  .manager-form form>div input:not([type="submit"])
+    margin: 5px
+  .manager-form form>div:nth-of-type(3), .manager-form form>div:nth-of-type(4)
+    margin: 10px 0
+  .manager-form form>input[type="submit"]
+    left: 0
+@media(max-width: 699px)
+  .manager-form form>div .span-3-f
+    display: block
+    margin-top: 10px
+

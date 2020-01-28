@@ -1,0 +1,253 @@
+.product__project
+  .back-to-projects
+    width: 100%
+    height: auto
+    display: inline-block
+    color: $darkbrown !important
+    font-weight: 600
+    text-transform: uppercase
+    margin-bottom: 30px
+    &:hover
+      text-decoration: none
+    span
+      margin-left: 10px
+
+  &--gallery
+    @media (max-width: 992px)
+      margin-bottom: 15px
+    .fotorama
+    .fotorama__stage
+      margin-bottom: 10px
+      padding-left: 5px
+      background: #fff
+      position: relative
+      border: 3px solid #4a371e
+      box-shadow: 0 0 0 4px #f9eedd, 0 0 0 5px #4a371e
+      box-sizing: border-box
+    .fotorama__wrap
+      padding: 5px 11px 0 5px
+
+    .fotorama__thumb-border
+      border: 2px solid #4a371e!important
+
+    .fotorama__arr,
+    .fotorama__fullscreen-icon,
+    .fotorama__video-close,
+    .fotorama__video-play
+      border-radius: 50% !important
+      background: #869791 url(../libs/fotorama/fotorama.png) no-repeat
+      overflow: hidden !important
+
+    .fotorama__arr
+      border-radius: 50% !important
+      background: #869791
+      &:after
+        content: ''
+        position: absolute
+        top: -1px
+        left: 10px
+        width: auto !important
+        height: 100% !important
+        //font-family: ProximaNovaCond-Regular
+        font-size: 30px !important
+        color: #fff
+        font-weight: 700 !important
+        display: inline-block !important
+        line-height: 1
+
+      &:hover
+        filter: Alpha(Opacity=1) !important
+        opacity: 1 !important
+    .fotorama__arr--prev
+      &:after
+        content: '‹'
+
+    .fotorama__arr--next
+      &:after
+        content: '›'
+        left: 13px
+
+    .fotorama__fullscreen-icon
+      border-radius: 50% !important
+      background: #869791 url(../libs/fotorama/fotorama.png) no-repeat 0 -32px
+      overflow: hidden !important
+      //filter: Alpha(Opacity=50) !important
+      //opacity: .5 !important
+      &:hover
+        filter: Alpha(Opacity=1) !important
+        opacity: 1 !important
+
+  &--info
+    display: flex
+    flex-flow: wrap
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 30px
+    .specification, .options
+      width: 49%
+      height: 291px
+      //min-width: 272px
+      display: flex
+      flex-flow: column
+      background: #fff
+      padding: 8px
+      box-shadow: inset 0 0 0 3px #eae8e1
+      h6
+        width: 210px
+        font-size: 23px
+        font-weight: bold
+        font-family: 'CyrillicOld'
+        line-height: 28px
+        color: $text
+        text-align: center
+        margin: 10px auto
+    .specification
+      &__list
+        padding: 10px 18px 18px
+        li
+          display: block
+          line-height: 1
+          font-size: 16px
+          border-bottom: 1px dotted #ccc
+          padding-top: 6px
+          margin-bottom: 6px
+        span
+          float: right
+          font-style: italic
+    .options
+      &__list
+        display: flex
+        flex-flow: wrap
+        justify-content: center
+        margin-top: 15px
+        li
+          width: 50%
+          height: auto
+          display: flex
+          flex-flow: column
+          align-items: center
+          text-align: center
+          margin: 0 auto 13px
+          img
+            display: block
+            width: auto
+            height: auto
+          span
+            font-size: 13px
+            font-weight: bold
+    .cost
+      width: 100%
+      height: auto
+      display: flex
+      flex-flow: wrap
+      justify-content: space-between
+      align-items: center
+      background: $orange
+      color: #fff
+      padding: 15px 20px
+      margin: 15px 0
+      span
+      .title-cost
+        width: auto
+        max-width: 172px
+        font-size: 14px
+        span
+          font-size: 16px
+
+      .old-cost
+        text-decoration: line-through
+        font-size: 16px
+        font-weight: bold
+        white-space: nowrap
+      .new-cost
+        font-size: 31px
+        font-weight: bold
+        white-space: nowrap
+    .order-btns
+      width: 100%
+      height: auto
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-flow: wrap
+      @media (max-width: 540px)
+        flex-direction: column-reverse
+        button
+          width: 100% !important
+      button
+        width: 49%
+        height: 65px
+        //min-width: 250px
+        span
+          white-space: nowrap
+      #buy-sketch-btn-open-popup
+        display: block
+        background: $green
+        padding: 0 15px
+        font-size: 16px
+        text-transform: uppercase
+        color: #fff
+        font-weight: 600
+        border-radius: 0
+        text-align: center
+      #discount-btn-open-popup
+        display: block
+        background: $darkblue
+        color: #fff
+        font-size: 16px
+        font-weight: bold
+        line-height: 20px
+        padding: 0 40px
+  &--description
+    width: 100%
+    height: auto
+    background: #fff
+    font-family: 'ProximaNovaRegular' !important
+    color: $darkbrown
+    padding: 20px 40px
+    border-radius: 7px
+    @media (max-width: 580px)
+      padding: 20px 10px !important
+    .title-section
+      text-transform: uppercase
+    h3,h4,h5,h6
+      font-family: 'ProximaNovaBold' !important
+      color: $darkbrown
+      margin-bottom: 20px
+    h3
+      font-size: 18px
+      text-align: center
+    h4
+      font-size: 17px
+      margin-bottom: 0
+    h6
+      font: bold 16px 'ProximaNovaRegular' !important
+      margin: 10px 0 10px 17px
+    p
+      font-size: 16px
+      margin: 0 0 20px 17px
+    .no-left-padding
+      margin: 0 0 20px
+      a
+        color: $darkbrown
+        text-decoration: underline
+        &:hover
+          text-decoration: none
+
+
+
+
+@media (max-width: 580px)
+  .product__project
+    flex-flow: column
+    align-items: center
+    &--gallery
+    &--info
+    .specification, .options
+      width: 100% !important
+      margin: 5px 0
+    .new-cost
+      margin: 0 auto
+    .order-btns
+      button
+        margin: 5px auto

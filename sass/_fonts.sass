@@ -1,0 +1,81 @@
+// font-weight helper:
+
+// 100 Extra Light or Ultra Light
+// 200 Light or Thin 300 Book or Demi
+// 400 Regular or Normal
+// 500 Medium
+// 600 Semibold or Demibold
+// 700 Bold
+// 800 Black or Extra Bold or Heavy
+// 900 Extra Black or Fat or Ultra Black
+
+
+@mixin font($f-name, $f-style, $f-weight, $f-url, $f-format)
+  @font-face
+    font-family: $f-name
+    font-style: $f-style
+    font-weight: $f-weight
+    src: url($f-url) format($f-format)
+
+
+
+//@include font('cyrillicold', normal, 700, '../fonts/cyrillicold.woff2', 'woff2', '../fonts/cyrillicold.ttf', 'truetype')
+
+//@include font('ProximaNovaBold', normal, 400, '../fonts/proximanova-bold.woff2', 'woff2', '../fonts/ProximaNova-Bold.ttf', 'truetype')
+
+@font-face
+  font-family: 'cyrillicold'
+  font-style: normal
+  font-weight: 700
+  src: url('../fonts/cyrillicold.woff2') format('woff2')
+  src: url('../fonts/cyrillicold.ttf') format('truetype')
+
+@font-face
+  font-family: 'ProximaNovaBold'
+  font-style: normal
+  font-weight: 400
+  src: url('../fonts/proximanova-bold.woff2') format('woff2')
+  src: url('../fonts/ProximaNova-Bold.ttf') format('truetype')
+
+@include font('ProximaNovaRegular', normal, 400, '../fonts/ProximaNova-Regular.ttf', 'truetype')
+
+@include font('ProximaNovaCond-Regular', normal, 400, '../fonts/ProximaNovaCond-Regular.ttf', 'truetype')
+
+// иконки ------------------------------
+
+.icon-arrows-alt
+  width: 13px
+  height: 13px
+  position: relative
+  display: inline-block
+  margin-right: 2px
+  &:before
+    content: ''
+    position: absolute
+    width: 13px
+    height: 13px
+    top: 2px
+    left: -2px
+    display: inline-block
+    background: url("../img/_src/expand-arrows-alt-solid.svg") no-repeat center
+
+.icon-home
+  width: 13px
+  height: 13px
+  position: relative
+  display: inline-block
+  margin-right: 2px
+  &:before
+    content: ''
+    position: absolute
+    width: 13px
+    height: 13px
+    top: 2px
+    left: 0
+    display: inline-block
+    background: url("../img/_src/home-solid.svg") no-repeat center
+
+//@include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2')
+//@include font('Roboto', italic, 400, '../fonts/roboto-italic-webfont.woff2')
+//@include font('Roboto', normal, 700, '../fonts/roboto-bold-webfont.woff2')
+//@include font('Roboto', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')

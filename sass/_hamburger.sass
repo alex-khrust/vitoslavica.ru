@@ -1,0 +1,86 @@
+$bar-width: 35px
+$bar-spacing: 13px
+$bar-height: 3px
+
+//.mob-menu
+.bar,
+.bar:after,
+.bar:before
+  width: 20px
+  height: 3px
+
+.bar:before
+  bottom: 7px
+.bar:after
+  top: 7px
+.bar.animate:before
+  bottom: 0
+.bar.animate:after
+  top: 0
+
+.hamburger-btn
+  width: auto
+  max-width: $bar-width
+  height: auto
+  //display: flex
+  margin: 10px
+  flex: 2
+  @media (min-width: 1200px)
+    display: none
+
+.hamburger
+  width: 100%
+  height: 100%
+  position: relative
+  margin: auto
+  cursor: pointer
+  display: flex
+  justify-content: center
+  align-items: center
+
+
+.bar,
+.bar:after,
+.bar:before
+  width: $bar-width
+  height: $bar-height
+
+
+.bar
+  position: relative
+  //transform: translateY($bar-spacing)
+  background: rgba(255, 255, 255, 1)
+  transition: all 0ms 200ms
+
+  &.animate
+    background: rgba(255, 255, 255, 0)
+
+
+.bar:before
+  content: ""
+  position: absolute
+  left: 0
+  bottom: $bar-spacing
+  background: rgba(255, 255, 255, 1)
+  transition: bottom 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1), transform 200ms cubic-bezier(0.23, 1, 0.32, 1)
+
+
+.bar:after
+  content: ""
+  position: absolute
+  left: 0
+  top: $bar-spacing
+  background: rgba(255, 255, 255, 1)
+  transition: top 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1), transform 200ms cubic-bezier(0.23, 1, 0.32, 1)
+
+
+.bar.animate:after
+  top: 0
+  transform: rotate(45deg)
+  transition: top 200ms cubic-bezier(0.23, 1, 0.32, 1), transform 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1)
+
+
+.bar.animate:before
+  bottom: 0
+  transform: rotate(-45deg)
+  transition: bottom 200ms cubic-bezier(0.23, 1, 0.32, 1), transform 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1)

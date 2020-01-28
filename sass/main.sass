@@ -1,0 +1,354 @@
+@import vars
+@import fonts
+@import libs
+//--- <Хедер> ------
+@import header
+@import header-nav
+@import hamburger
+//--- </Хедер> ------
+//--- <Главная страница> ------
+@import slider-home
+@import pop-projects
+@import architect-styles
+@import youtube-video
+@import video
+@import advantage
+@import callback
+@import credits
+//--- </Главная страница> ------
+//--- <Футер> ------
+@import footer
+//--- </Футер> ------
+
+//--- <Страница карточки товара> ------
+@import product__project
+@import project-description
+@import product__equipment
+@import calculator-house
+@import recent-projects
+@import video-reviews
+@import down-info
+//--- <Страница карточки товара> ------
+
+//--- <Страница калькулятора> ---------
+@import calculator
+@import calculator-description
+//@import youtube-video
+//--- </Страница калькулятора> ---------
+
+//--- <Страница контактов> ---------
+@import contacts-page
+//--- </Страница контактов> ---------
+
+//--- <Страница проектов> ---------
+@import filter-search
+@import projects-grid
+@import pagination
+@import gallery
+//--- </Страница проектов> ---------
+
+//--- <Страница отзывов> ----------
+//@import video-reviews
+//--- </Страница отзывов> ---------
+
+//--- <Страница галереи> ----------
+//@import youtube-video
+//@import gallery
+//@import down-info
+//--- </Страница галереи> ----------
+
+//--- <Страница списка статей> ----------
+@import articles.
+//--- </Страница списка статей> ----------
+
+//--- <Страница результатов поиска> ----------
+@import search-result
+//--- </Страница результатов поиска> ----------
+
+//--- <Страница галереи проекта> ----------
+//@import gallery
+//--- <.Страница галереи проекта> ----------
+
+//--- <Страница 404> ----------
+@import 404
+//--- </Страница 404> ----------
+
+//--- <Страница Цены на материал> ----------
+@import "material_price-page"
+//--- </Страница Цены на материал> ----------
+
+@import popups
+
+
+
+::placeholder
+  color: #666
+
+::selection
+  background-color: $accent
+  color: #fff
+
+input, textarea
+  outline: none
+
+  //&:focus:required:invalid
+  //  border-color: red
+  //
+  //&:required:valid
+  //  border-color: green
+
+body
+  font-size: 14px
+  min-width: 320px
+  position: relative
+  line-height: 1.4
+  font-family: 'ProximaNovaRegular', Arial, sans-serif
+  overflow-x: hidden
+  color: $text
+  background: #fff
+
+h1,h2,h3,h4,h5,h6
+  font-family: 'cyrillicold', Arial, sans-serif
+  color: #fff
+
+ul
+  list-style: none
+  margin: 0
+  padding: 0
+
+p
+  margin: 0
+
+a
+  transition: .3s
+  text-decoration: none
+a, a:visited, a:focus
+  color: #a4a4a4
+  cursor: pointer
+  text-decoration: none
+  outline: 0
+
+button, a
+  &:focus
+    outline: none
+button
+  outline: none
+  border: none
+
+section
+  padding-top: 40px
+  padding-bottom: 40px
+  //@media (max-width: 768px)
+  //  padding-top: 20px !important
+  //  padding-bottom: 20px !important
+.container
+  section
+    padding: 0
+//header, .content, footer
+//  overflow-x: hidden
+
+.title-section
+  width: 100%
+  height: auto
+  max-width: 500px
+  text-align: center
+  font-size: 24px
+  line-height: 1.2
+  font-weight: bold
+  color: #fff
+  border-radius: 100px
+  position: relative
+  padding: 10px 12px
+  margin: 0 auto 40px
+
+.bg-orange
+  background: $orange
+.bg-darkblue
+  background: $darkblue
+
+.brown
+  color: $darkbrown
+
+
+.title-decorative
+  font-size: 24px
+  font-weight: bold
+  line-height: 67px
+  color: $darkbrown
+  text-align: center
+  background: url("../img/@2x/new-title-bg.png")
+  position: relative
+  margin: 0 80px 30px
+  &:before
+    content: ""
+    width: 80px
+    height: 72px
+    position: absolute
+    top: -5px
+    left: -80px
+    background: url("../img/@2x/new-title-1.png") no-repeat center
+  &:after
+    content: ""
+    width: 80px
+    height: 72px
+    position: absolute
+    top: -5px
+    right: -80px
+    background: url("../img/@2x/new-title-2.png") no-repeat center
+  @media (max-width: 992px)
+    background: none
+    line-height: 1.4
+    margin: 0 5px 30px
+    &:before, &:after
+      background: none
+.content-pages
+  .title-decorative
+    line-height: 80px
+    color: #4e3800
+    letter-spacing: 1pt
+    font-size: 30px
+    text-align: center
+    background: url("../img/@2x/orname_h1_02.png")
+    margin: 0 80px 30px
+    &:before
+      top: 0
+      float: right
+      background: #000
+      height: 75px
+      width: 89px
+      margin-right: -89px
+      background: url("../img/@2x/orname_h1_01.png") no-repeat center
+    &:after
+      top: 0
+      float: left
+      height: 75px
+      width: 90px
+      margin-left: -90px
+      background: url("../img/@2x/orname_h1_03.png") no-repeat center
+    @media (max-width: 768px)
+      background: none
+      line-height: 1.4
+      font-size: 25px
+      margin: 0 5px 30px
+      &:before, &:after
+        background: none
+
+
+.breadcrumb
+  border-radius: 0
+  padding: 0 10px 15px
+  font: bold 14px 'Arial'
+  a
+    font: normal 15px 'ProximaNovaCond-Regular'
+    margin: 0 5px
+    white-space: nowrap
+    &:hover
+      text-decoration: none
+      color: #3e454c
+  span
+    font: normal 15px 'ProximaNovaCond-Regular'
+    margin: 0 5px
+
+// Custom Sass / Remove before use
+
+.container
+  max-width: 1200px
+  padding:
+    right: $gutter/2
+    left: $gutter/2
+  margin:
+    left: auto
+    right: auto
+
+.content-pages
+  background: url('../img/@2x/bg-list.jpg')
+  border-radius: 15px 15px 0 0
+  box-shadow: 0 0 3px #000
+  margin-bottom: 20px
+  padding: 20px 0
+  h1
+    font-size: 30px
+  section
+    max-width: 1134px
+    margin: 0 auto
+
+
+
+//-----------------------------------------
+.owl-nav
+  width: 100% !important
+  height: auto !important
+  color: #fff !important
+  display: inline-block !important
+  position: absolute !important
+  top: calc(50% - 17px)
+  transform: translateY(-50%)
+  margin: 0!important
+  //z-index: 1 !important
+  button
+    width: 32px !important
+    height: 32px !important
+    display: flex !important
+    justify-content: center
+    align-items: center
+    margin: 5px
+    border-radius: 50% !important
+    background: #869791 !important
+    overflow: hidden !important
+    filter: Alpha(Opacity=50) !important
+    opacity: .5 !important
+    position: relative
+    //z-index: 1 !important
+    &:hover
+      filter: Alpha(Opacity=1) !important
+      opacity: 1 !important
+    span
+      width: auto !important
+      height: 100% !important
+      font-size: 30px !important
+      font-weight: bold !important
+      display: inline-block !important
+      line-height: 1
+      position: absolute
+      top: -1px
+  .owl-prev
+    float: left
+  .owl-next
+    float: right
+
+.owl-dots
+  margin-top: 5px !important
+.owl-theme .owl-dots .owl-dot span
+  width: 12px !important
+  height: 12px !important
+
+//
+//.img-responsive
+//  display: block
+//  max-width: 100%
+//  height: auto
+//
+//.example-grid
+//  display: grid
+//  grid-gap: $gutter
+//  grid-template-columns: 1fr 1fr
+//  grid-template-areas: "left right"
+//
+//  > div:first-child
+//    grid-area: left
+//
+//  > div:last-child
+//    grid-area: right
+//
+//  +media-breakpoint-down(xs)
+//    display: block
+//    > div
+//      padding: $gutter/2 0
+//
+//.example-img
+//  width: 100%
+//
+//.parent
+//  // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
+//  background-image: url(data:image/gifbase64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+

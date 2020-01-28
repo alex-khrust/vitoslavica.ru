@@ -1,0 +1,57 @@
+.credits
+  width: 100%
+  height: auto
+  padding: 50px 0
+  &__list
+    width: 100%
+    height: auto
+    display: flex
+    align-items: center
+    justify-content: space-around
+    &--item
+    .vi-finance
+      a
+        width: auto
+        height: auto
+        display: flex
+        flex-flow: column
+        align-items: center
+        text-decoration: none
+      h2,h3
+        color: $text
+        line-height: 20px
+        font-weight: normal
+        text-transform: uppercase
+        text-align: center
+        margin: 0
+      h2
+        padding: 5px 0
+        font-size: 28px
+        color: $darkblue
+
+      h3
+        font-size: 18px
+  @media (max-width: 992px)
+    padding: 20px 0
+    &__list
+      flex-flow: wrap
+      li
+        margin: 10px 0
+        &:nth-child(1)
+          order: 1
+          margin: 10px 25px
+        &:nth-child(2)
+          order: 3
+          h2
+            line-height: 25px
+        &:nth-child(3)
+          order: 2
+          margin: 10px 25px
+
+  @media (max-width: 380px)
+    &--item
+    .vi-finance
+      h2
+        font-size: 24px
+      h3
+        font-size: 17px

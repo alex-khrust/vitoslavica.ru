@@ -1,0 +1,59 @@
+.pop-projects
+  width: 100%
+  height: auto
+  background: #f7f7f7
+  .title-section
+    //margin-bottom: 20px
+  .pop-projects__list
+    &--item
+      margin: 5px 0 10px
+    .project-link
+    .project-img
+      width: 100%
+      height: auto
+      display: inline-block
+    .project-title
+      font: normal 24px 'ProximaNovaRegular'
+      color: $text
+      padding: 10px 15px
+      margin-bottom: 0
+    .project-size
+      width: 90%
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding-bottom: 5px
+      border-bottom: 1px solid #e8e8e8
+      margin: 0 auto
+      .area, .size
+        display: flex
+        align-items: center
+        font-size: 16px
+        img
+          margin-right: 5px
+
+    .project-price
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 0 15px
+      margin: 0 auto
+      .old-price, .new-price
+        font-size: 24px
+        font-weight: bold
+        padding: 0 5px
+      .old-price
+        position: relative
+        &:after
+          content: ''
+          width: 100%
+          height: 2px
+          position: absolute
+          top: 50%
+          left: 0
+          transform: translateY(-50%)
+          background: $orange
+      .new-price
+        color: $green
+        padding-right: 0
+

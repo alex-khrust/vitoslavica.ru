@@ -1,0 +1,117 @@
+.pagination
+  width: 100%
+  text-align: center
+  display: flex
+  justify-content: center
+
+.pagination
+  display: flex
+  align-items: baseline
+  padding-left: 0
+  margin: 20px auto
+  border-radius: 4px
+  ul
+    width: auto
+    text-align: center
+    display: flex
+  li
+    display: inline
+
+
+
+.pagination>li:first-child>a, .pagination>li:first-child>span
+  margin-left: 0
+  border-radius: 0
+  border: 0
+  height: 22px
+  margin-top: 6px
+  box-shadow: none
+  background: transparent url(../img/_src/blog-aroows.png) no-repeat top center
+  color: rgba(0,0,0,0)
+  &:hover
+    background: transparent url(../img/_src/blog-aroows.png) no-repeat top center
+    color: rgba(0,0,0,0)
+
+
+.pagination>li:last-child>a, .pagination>li:last-child>span
+  border-radius: 0
+  border: 0
+  height: 22px
+  margin-top: 6px
+  box-shadow: none
+  background: transparent url(../img/_src/blog-aroows.png) no-repeat bottom center
+  color: rgba(0,0,0,0)
+  &:hover
+    background: transparent url(../img/_src/blog-aroows.png) no-repeat bottom center
+    color: rgba(0,0,0,0)
+
+
+.pagination>li:first-child>a, .pagination>li:first-child>span
+  margin-left: 0
+  border-bottom-left-radius: 4px
+  border-top-left-radius: 4px
+
+.pagination>.disabled>a:hover, .pagination>.disabled>span:hover
+  cursor: not-allowed
+  background-color: rgba(0,0,0,0)
+  color: rgba(0,0,0,0)
+
+.pagination>.spec>a:hover, .pagination>.spec>span:hover
+  background: none
+  color: $darkbrown
+
+.pagination>li>a, .pagination>li>span
+  width: 33px
+  height: 33px
+  text-align: center
+  border-radius: 50%
+  border: 1px solid #4a371e
+  box-shadow: 0 0 0 2px #f9eedd, 0 0 0 3px #4a371e
+  color: #4a371e
+  margin-left: 10px
+  font-size: 14px
+  font-weight: bold
+  display: flex
+  justify-content: center
+  align-items: center
+  text-decoration: none
+  @media (max-width: 425px)
+    width: 25px
+    height: 25px
+
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus
+  z-index: 2
+  color: #fff
+  cursor: default
+  background-color: #4a371e
+  border-color: #4a371e
+  box-shadow: none
+
+.pagination>.active>a
+  background-color: #4a371e
+  color: #f8eddb
+
+.pagination>li>a, .pagination>li>span
+  border-radius: 50%
+  border: 1px solid #4a371e
+  box-shadow: 0 0 0 2px #f9eedd, 0 0 0 3px #4a371e
+  background: 0
+  color: #4a371e
+  margin-left: 10px
+  font-size: 14px
+  font-weight: bold
+
+.disabled.spec a
+  border: 0
+  background: 0
+  box-shadow: none
+  text-decoration: none
+  cursor: default!important
+
+
+.pagination>li>a:hover, .pagination>li>span:hover,
+.pagination>li>a:focus, .pagination>li>span:focus
+  background-color: #4a371e
+  color: #fff
+

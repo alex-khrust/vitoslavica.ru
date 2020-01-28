@@ -1,0 +1,184 @@
+.down-info
+  width: 100%
+  height: auto
+  padding: 20px 10px !important
+  *
+    font-family: 'CyrillicOld'
+    color: $darkbrown
+
+  .down-info-inner
+    width: 100%
+    height: auto
+    display: flex
+    flex-flow: column
+    justify-content: center
+  .hr-decor-top, .hr-decor-bottom
+    width: 100%
+    height: 11px
+    position: relative
+    z-index: 1
+    background: url(../img/@2x/cart-tovar-line.png) repeat-x
+    margin: 10px auto
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 11px
+      height: 11px
+      display: block
+      background: #f9eedd url(../img/@2x/cart-tovar-line-l.png) no-repeat center
+      z-index: 2
+    &:after
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      width: 11px
+      height: 11px
+      display: block
+      background: #f9eedd url(../img/@2x/cart-tovar-line-r.png) no-repeat center
+      z-index: 2
+  .down-info-title
+    font-size: 22px
+    text-align: center
+  .down-info-btn
+    width: 100%
+    max-width: 250px
+    height: 46px
+    font-size: 13px
+    text-transform: uppercase
+    font-weight: bold
+    text-align: center
+    color: #fff!important
+    display: inline-block
+    border-radius: 5px
+    border: 2px solid #543500
+    background: url(../img/@2x/donw-info-btn.jpg) no-repeat center
+    margin: 20px auto
+    box-shadow: none!important
+    transition: .3s ease-in-out
+    &:hover
+      color: #543500!important
+      box-shadow: 0 14px 36px 1px rgba(255,255,255,0.8) inset!important
+
+  .down-info-text
+    text-align: center
+    font-size: 18px
+
+
+
+.gallery-page
+  .down-info
+    padding: 0 !important
+    *
+      font-family: ProximaNovaRegular
+    .hr-decor-top, .hr-decor-bottom
+      margin: 20px auto
+
+
+
+
+
+
+.company-page
+  //.breadcrumb
+  //  padding-left: 0
+  //  padding-right: 0
+  .down-info
+    padding: 0 !important
+    *
+      font-family: ProximaNovaRegular
+    .hr-decor-top, .hr-decor-bottom
+      margin: 20px auto
+    .activities
+      display: flex
+      flex-flow: wrap
+      justify-content: space-around
+      margin-top: 20px
+      li
+        width: 100%
+        min-height: 25px
+        max-width: 480px
+        line-height: 16px
+        padding-left: 28px
+        position: relative
+        margin-bottom: 10px
+        &:before
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 14px
+          height: 14px
+          border-radius: 50%
+          background: #b6a48b
+          border: 2px solid $darkbrown
+    .virtues-wrap
+      width: 100%
+      height: auto
+      display: flex
+      background: rgba(77,44,1,0.3)
+      margin: 20px 0 10px
+
+    .virtues
+      width: 100%
+      height: auto
+      max-width: 1050px
+      display: flex
+      flex-flow: wrap
+      justify-content: space-between
+      padding: 25px 5px 5px
+      margin: 0 auto
+      @media (max-width: 910px)
+        justify-content: center
+      li
+        width: 100%
+        min-height: 25px
+        max-width: 430px
+        line-height: 16px
+        padding-left: 40px
+        position: relative
+        margin-bottom: 20px
+        @media (min-width: 1050px)
+          max-width: 500px
+          &:last-child
+            margin-right: auto
+        img
+          width: 32px
+          height: 32px
+          position: absolute
+          top: -8px
+          left: 0
+
+  h2,h3,h4,h5
+    color: $darkbrown !important
+    font-family: 'ProximaNovaRegular' !important
+    text-align: center !important
+  h4
+    font-size: 15px !important
+    text-transform: uppercase !important
+  h5
+    font-size: 15px
+  p
+    margin-bottom: 20px
+    &:last-child
+      margin-bottom: 0
+  a
+    color: $darkbrown
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+
+  .certificates
+    margin: 40px auto 0
+    &-title
+      margin-bottom: 20px
+    &__list
+      li
+        margin-bottom: 20px
+        img
+          width: 100%
+          height: auto
+          object-fit: cover
+
